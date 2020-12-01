@@ -915,7 +915,6 @@ CIMGUI_API double igImConstrainLog(double val);
 CIMGUI_API double igImConstrainTime(double val);
 CIMGUI_API ImBufferWriter* ImBufferWriter_ImBufferWriter(char* buffer,int size);
 CIMGUI_API void ImBufferWriter_destroy(ImBufferWriter* self);
-CIMGUI_API void ImBufferWriter_Write(ImBufferWriter* self,const char* fmt,...);
 CIMGUI_API ImPlotDateTimeFmt* ImPlotDateTimeFmt_ImPlotDateTimeFmt(ImPlotDateFmt date_fmt,ImPlotTimeFmt time_fmt,bool use_24_hr_clk,bool use_iso_8601);
 CIMGUI_API void ImPlotDateTimeFmt_destroy(ImPlotDateTimeFmt* self);
 CIMGUI_API ImPlotTime* ImPlotTime_ImPlotTimeNil(void);

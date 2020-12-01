@@ -43,6 +43,7 @@ defs["ImBufferWriter_Write"][1]["location"] = "implot_internal:135"
 defs["ImBufferWriter_Write"][1]["ov_cimguiname"] = "ImBufferWriter_Write"
 defs["ImBufferWriter_Write"][1]["ret"] = "void"
 defs["ImBufferWriter_Write"][1]["signature"] = "(const char*,...)"
+defs["ImBufferWriter_Write"][1]["skipped"] = true
 defs["ImBufferWriter_Write"][1]["stname"] = "ImBufferWriter"
 defs["ImBufferWriter_Write"]["(const char*,...)"] = defs["ImBufferWriter_Write"][1]
 defs["ImBufferWriter_destroy"] = {}

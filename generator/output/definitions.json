@@ -51,6 +51,7 @@
       "ov_cimguiname": "ImBufferWriter_Write",
       "ret": "void",
       "signature": "(const char*,...)",
+      "skipped": true,
       "stname": "ImBufferWriter"
     }
   ],

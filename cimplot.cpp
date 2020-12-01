@@ -2,6 +2,7 @@
 //based on implot.h file version 0.8 WIP from implot https://github.com/epezent/implot
 
 #include "./implot/implot.h"
+#include "./implot/implot_internal.h"
 #include "cimplot.h"
 
 
@@ -1409,13 +1410,6 @@ CIMGUI_API ImBufferWriter* ImBufferWriter_ImBufferWriter(char* buffer,int size)
 CIMGUI_API void ImBufferWriter_destroy(ImBufferWriter* self)
 {
     IM_DELETE(self);
-}
-CIMGUI_API void ImBufferWriter_Write(ImBufferWriter* self,const char* fmt,...)
-{
-    va_list args;
-    va_start(args, fmt);
-    self->WriteV(fmt,args);
-    va_end(args);
 }
 CIMGUI_API ImPlotDateTimeFmt* ImPlotDateTimeFmt_ImPlotDateTimeFmt(ImPlotDateFmt date_fmt,ImPlotTimeFmt time_fmt,bool use_24_hr_clk,bool use_iso_8601)
 {

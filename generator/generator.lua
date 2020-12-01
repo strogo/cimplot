@@ -52,7 +52,7 @@ local cimgui_manuals = {
 	 ImPlot_PlotDigitalG = true,
 }
 local cimgui_skipped = {
-	 --ImPlot_AnnotateClamped = true
+	 ImBufferWriter_Write = true
 }
 --------------------------------------------------------------------------
 --this table is a dictionary to force a naming of function overloading (instead of algorythmic generated)
