@@ -156,8 +156,23 @@ local function parseImGuiHeader(header,names)
 end
 --generation
 print("------------------generation with "..COMPILER.."------------------------")
+--[==[
+save_data("header_time.h",[[#include <time.h>]])
+local pipe,err = io.popen(COMPILER..[[ -E  header_time.h]],"r")
+while true do
+    local line = pipe:read"*l"
+    if not line then break end
+    print(line)
+end
+pipe:close()
+os.remove("header_time.h")
+--]==]
+--------------------
 local modulename = "cimplot"
-local parser1 = parseImGuiHeader([[../implot/implot.h]],{[[implot]]})
+local headers = [[#include "../implot/implot.h"]].."\n"..[[#include "../implot/implot_internal.h"]]
+save_data("headers.h",headers)
+local parser1 = parseImGuiHeader([[headers.h]],{[[implot]],[[implot_internal]]})
+os.remove("headers.h")
 parser1:do_parse()
 
 save_data("./output/overloads.txt",parser1.overloadstxt)
