@@ -1734,10 +1734,6 @@ CIMGUI_API void ImPlot_LabelTickScientific(ImPlotTick* tick,ImGuiTextBuffer* buf
 {
     return ImPlot::LabelTickScientific(*tick,*buffer);
 }
-CIMGUI_API void ImPlot_LabelTickTime(ImPlotTick* tick,ImGuiTextBuffer* buffer,const ImPlotTime t,ImPlotDateTimeFmt fmt)
-{
-    return ImPlot::LabelTickTime(*tick,*buffer,t,fmt);
-}
 CIMGUI_API void ImPlot_AddTicksDefault(const ImPlotRange range,int nMajor,int nMinor,ImPlotTickCollection* ticks)
 {
     return ImPlot::AddTicksDefault(range,nMajor,nMinor,*ticks);
@@ -1745,10 +1741,6 @@ CIMGUI_API void ImPlot_AddTicksDefault(const ImPlotRange range,int nMajor,int nM
 CIMGUI_API void ImPlot_AddTicksLogarithmic(const ImPlotRange range,int nMajor,ImPlotTickCollection* ticks)
 {
     return ImPlot::AddTicksLogarithmic(range,nMajor,*ticks);
-}
-CIMGUI_API void ImPlot_AddTicksTime(const ImPlotRange range,int nMajor,ImPlotTickCollection* ticks)
-{
-    return ImPlot::AddTicksTime(range,nMajor,*ticks);
 }
 CIMGUI_API void ImPlot_AddTicksCustom(const double* values,const char* const labels[],int n,ImPlotTickCollection* ticks)
 {

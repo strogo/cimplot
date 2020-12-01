@@ -995,10 +995,8 @@ CIMGUI_API void ImPlot_ShowLegendEntries(ImPlotPlot* plot,const ImRect legend_bb
 CIMGUI_API void ImPlot_ShowAltLegend(const char* title_id,ImPlotOrientation orientation,const ImVec2 size,bool interactable);
 CIMGUI_API void ImPlot_LabelTickDefault(ImPlotTick* tick,ImGuiTextBuffer* buffer);
 CIMGUI_API void ImPlot_LabelTickScientific(ImPlotTick* tick,ImGuiTextBuffer* buffer);
-CIMGUI_API void ImPlot_LabelTickTime(ImPlotTick* tick,ImGuiTextBuffer* buffer,const ImPlotTime t,ImPlotDateTimeFmt fmt);
 CIMGUI_API void ImPlot_AddTicksDefault(const ImPlotRange range,int nMajor,int nMinor,ImPlotTickCollection* ticks);
 CIMGUI_API void ImPlot_AddTicksLogarithmic(const ImPlotRange range,int nMajor,ImPlotTickCollection* ticks);
-CIMGUI_API void ImPlot_AddTicksTime(const ImPlotRange range,int nMajor,ImPlotTickCollection* ticks);
 CIMGUI_API void ImPlot_AddTicksCustom(const double* values,const char* const labels[],int n,ImPlotTickCollection* ticks);
 CIMGUI_API int ImPlot_LabelAxisValue(const ImPlotAxis axis,const ImPlotTickCollection ticks,double value,char* buff,int size);
 CIMGUI_API const ImPlotNextItemData* ImPlot_GetItemData(void);

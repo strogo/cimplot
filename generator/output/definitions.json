@@ -1801,6 +1801,7 @@
       "ov_cimguiname": "ImPlot_AddTicksTime",
       "ret": "void",
       "signature": "(const ImPlotRange,int,ImPlotTickCollection*)",
+      "skipped": true,
       "stname": ""
     }
   ],
@@ -4382,6 +4383,7 @@
       "ov_cimguiname": "ImPlot_LabelTickTime",
       "ret": "void",
       "signature": "(ImPlotTick*,ImGuiTextBuffer*,const ImPlotTime,ImPlotDateTimeFmt)",
+      "skipped": true,
       "stname": ""
     }
   ],
