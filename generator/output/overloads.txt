@@ -1,7 +1,4 @@
 ----------------overloadings---------------------------
-ImPlotAxisState_ImPlotAxisState	2
-1	nil	ImPlotAxisState_ImPlotAxisStatePlotAxisPtr (ImPlotAxis*,bool,ImGuiCond,bool)
-2	nil	ImPlotAxisState_ImPlotAxisStateNil ()
 ImPlotAxis_SetRange	2
 1	void	ImPlotAxis_SetRangedouble (double,double)
 2	void	ImPlotAxis_SetRangePlotRange (const ImPlotRange)
@@ -336,4 +333,4 @@ igImRemap	10
 8	ImU32	igImRemapU32 (ImU32,ImU32,ImU32,ImU32,ImU32)
 9	ImS64	igImRemapS64 (ImS64,ImS64,ImS64,ImS64,ImS64)
 10	ImU64	igImRemapU64 (ImU64,ImU64,ImU64,ImU64,ImU64)
-299 overloaded
+297 overloaded

@@ -5,7 +5,6 @@
   "ImPlotAxis": "struct ImPlotAxis",
   "ImPlotAxisColor": "struct ImPlotAxisColor",
   "ImPlotAxisFlags": "int",
-  "ImPlotAxisScale": "struct ImPlotAxisScale",
   "ImPlotAxisState": "struct ImPlotAxisState",
   "ImPlotCol": "int",
   "ImPlotColormap": "int",
